@@ -10,7 +10,7 @@ public class Ex1 {
 	public static void main(String[] args) {
 		//Author: Joao Vitor Souza Pioner | Date: 16/06/2021
 		Scanner in = new Scanner(System.in);
-		
+		StringBuilder sb = new StringBuilder();
 		System.out.print("Enter a positive number: ");
 		Integer number = in.nextInt();
 		checkNumber(number);
