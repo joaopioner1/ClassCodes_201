@@ -15,6 +15,7 @@ public class Ex2 {
 			ze += 4;
 			chico += 2;
 		}
+		System.out.println("--------------");
 		System.out.println("Ze sera mais velho depois de " + anos + " anos.");
 		
 		sc.close();
