@@ -20,7 +20,12 @@ public class AllMethodsExcercises {
 		System.out.print("Enter 2 numbers: ");
 		Integer n3 = sc.nextInt();
 		Integer n4 = sc.nextInt();
-		System.out.println("Mul: " + mul(n3, n4) + "\n----------------");
+		System.out.println("Mul1: " + mul2(n3, n4) + "\n----------------");
+		
+		System.out.print("Enter 2 numbers: ");
+		Integer n5 = sc.nextInt();
+		Integer n6 = sc.nextInt();
+		System.out.println("Mul: " + mul1(n5, n6) + "\n----------------");
 		
 		sc.close();
 	}
@@ -39,11 +44,22 @@ public class AllMethodsExcercises {
 		return n1 + n2;
 	}
 	
-	static Integer mul(Integer n1, Integer n2) {
+	static Integer mul1(Integer n1, Integer n2) {
 		int count = 0;
 		for (int i = 1; i <= n2; i++) {
 			count += n1;
 		}
+		return count;
+	}
+	
+	static Integer mul2(Integer n1, Integer n2) {
+		int count = 0;
+		for (int i = 1; i <= n2; i++) {
+			if (n1 == 0) {
+				return 0;
+			}
+			count += n1;
+		} //fix negative
 		return count;
 	}
 }
