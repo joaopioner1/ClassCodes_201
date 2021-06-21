@@ -15,8 +15,12 @@ public class AllMethodsExcercises {
 		System.out.print("Enter 2 numbers: ");
 		Double n1 = sc.nextDouble();
 		Double n2 = sc.nextDouble();
-		System.out.println("Sum: " + String.format("%.2f", sum(n1,n2)) + ".\n----------------");
+		System.out.println("Sum: " + String.format("%.2f", sum(n1,n2)) + "\n----------------");
 
+		System.out.print("Enter 2 numbers: ");
+		Integer n3 = sc.nextInt();
+		Integer n4 = sc.nextInt();
+		System.out.println("Mul: " + mul(n3, n4) + "\n----------------");
 		
 		sc.close();
 	}
@@ -34,7 +38,14 @@ public class AllMethodsExcercises {
 	static Double sum(Double n1, Double n2) {
 		return n1 + n2;
 	}
-
+	
+	static Integer mul(Integer n1, Integer n2) {
+		int count = 0;
+		for (int i = 1; i <= n2; i++) {
+			count += n1;
+		}
+		return count;
+	}
 }
 /*
  * 1. Transforme o exercício 3 de loops em uma função que retorna o
